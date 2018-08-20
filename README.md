@@ -1,2 +1,2 @@
-# Shopify
-MyParcel manual for the Shopify extension
+# Shopify-handleiding
+Voor de handleiding ga naar https://myparcelnl.github.io/shopify
