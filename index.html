@@ -1,182 +1,227 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="UTF-8"/>
-    <title>Shopify MyParcel Gebruikershandleiding</title>
-    <meta name="description" content="Installatie- gebruikershandleiding voor de Shopify MyParcel plug-in">
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta charset="UTF-8" />
+    <title>MyParcel Shopify Handleiding</title>
+    <meta name="description" content="The documentation to make a connection with MyParcel">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="shortcut icon" href="https://backoffice.myparcel.nl/images/favicon/favicon.ico">
-    <link href="css/normalize.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css"/>
-    <link href="css/stylesheet.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link href="css/github-light.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+    <link href="css/stylesheet.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/github-light.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/auto_menu.js"></script>
 </head>
 <body>
-<section class="page-header">
-    <p>
-        <img alt="Logo MyParcel" src="media/logo_myparcel.png"/>
-        <!--<img height="180" alt="logo Shopify" src="media/shopify-logo.png"/></p>-->
-    <h1 class="project-name">
-      Installatie- gebruikershandleiding
-    </h1>
-    <h2 class="project-tagline">
-        Shopify MyParcel plugin
-    </h2>
-</section>
-<section class="main-content">
-    <h1>Inleiding</h1>
-    <p>
-        In deze handleiding laten wij zien hoe jij de plugin kunt installeren en instellen in jouw Shopify omgeving.
-        De plugin wordt kosteloos aangeboden door MyParcel. Wij helpen jou graag met eventuele vragen over de werking van de plugin.<br><br>
-        Alle functies van de plugin zijn getest in een standaard Shopify omgeving.
-<br><br>
-De in de vensters getoonde prijzen zijn slechts als voorbeeld ingesteld en wijken mogelijk af van werkelijke tarieven. Voor de juiste prijzen kun jij de </strong><a target="_blank" href="https://backoffice.myparcel.nl/tarieven">tarieven</a>  in jouw account raadplegen.
-
-    </p>
-
-    <h1>Inhoud</h1>
-    <div class="menu"></div>
-    <div>
-
-        <!--Hoofdstuk 1-->
-        <h1 id="1">1 Installatie</h1>
-        <p>
-        </p>
-        <h2 id="1_1">1.1 Via de App Store van Shopify</h2>
-
-        <ol>
-            <li>Ga via deze </strong><a target="_blank" href="https://apps.shopify.com/myparcel-nl-1">link</a> direct naar de MyParcel NL app. Werkt de link niet? Zoek op <span class="nice">MyParcel NL</span> in de App Store van Shopify.
-          </li>
-            <li>Klik op de knop "Get" en volg de stappen.</li>
-        </ol>
-
-        <h1 id="2">2 Instellen van de app</h1>
-
-        <h2 id="2_1">2.1 Het instellen van de koppeling</h2>
-        <p>Na de installatie is MyParcel NL onder <span class="nice">Apps</span> toegevoegd.</p>
-<img src="media/MyParcelNL ~ Apps ~ Shopify.png"/>
-        <p> Om jouw API-key toe te voegen en alle andere instellingen door te lopen klik je op de MyParcel app en vervolgens op <span class="nice">Instellingen</span>.</p>
-
-<img src="media/MyParcelNL ~ Apps ~ Instellingen.png"/>
-
-      <p>Hier dien jij jouw API-key toe te voegen. Om gebruik te maken van de MyParcel app is het noodzakelijk om een MyParcel account te hebben.
-        Maak </strong><a target="_blank" href="https://backoffice.myparcel.nl/registration">vrijblijvend</a>  een account aan en haal vervolgens jouw </strong><a target="_blank" href="https://backoffice.myparcel.nl/settings">API-key</a> op.</p>
-
-      <p>Kies vervolgens jouw favoriete printervoorkeur en beschrijving op het label. Wil je bijvoorbeeld dat MyParcel jouw fulfillment regelt in Shopify? Vink de optie <span class="nice">Automatisch</span> aan.</p>
-
-<img src="media/MyParcelNL ~ Apps ~ Instellingen 1.png"/>
-
-        <h2 id="2_2">2.2 Het instellen van de standaard exportinstellingen</h2>
-        <p>
-          De MyParcel app zal jouw reeds aanwezige <span class="nice">verzendmethoden</span> ophalen. Om orders te exporteren naar MyParcel is het noodzakelijk om deze eerst te koppelen met MyParcel en eventuele verzendopties.<br><br>
-          Mocht je nog geen verzendmethoden hebben aangemaakt? Ga naar <span class="nice">Settings - Shipping</span> in jouw Shopify omgeving.</p>
-
-Wij adviseren om verschillende venzendmethoden aan te maken. Hieronder een aantal punten om rekening mee te houden:
-      <ol>
-      <li>Verstuur je een <span class="nice">brievenbuspakje</span> <span class="nice">pakket</span><span class="nice">ongefrankeerd label</span> of <span class="nice">digitale postzegel</span>? Houd er rekening mee dat je per verzendmethode één van deze pakkettypen kan opgeven.</li>
-      <li>Wil je voor Nederland PostNL ophaallocaties aanbieden richting jouw klant? Maak een aparte verzendmethode aan met bijvoorbeeld de titel <span class="nice">Verzending naar afhaalpunt PostNL (selecteren na betaling)</span>. Zo weet jouw klant precies wat hij of zij kan verwachten.</li>
-      <li>Welke verzendopties wil je aan Nederlandse klanten aanbieden? Zijn al jouw zendingen standaard verzekerd of worden ze alleen geleverd aan het opgegeven huisadres.</li></ol>
-
-
-  <img src="media/MyParcelNL ~ Apps ~ Exportinstellingen.png"/><br><br>
-      Klik op een aangemaakte <span class="nice">verzendmethode</span> om aan te geven hoe jij deze wilt exporteren. <br><br>
-      Maak jouw keuze voor een pakkettype, of de klant kan kiezen voor een PostNL ophaalpunt of dat er mogelijk extra verzendopties wenselijk zijn. Het is uiteraard ook mogelijk om een verzendmethoden niet te koppelen aan MyParcel.
-    <br><br>  <img src="media/MyParcelNL ~ Apps ~ Exportinstellingen 1.png"/><br><br>
-
-     </li>Je kan voor Nederland een verzendmethode koppelen aan een Digitale Postzegel. 
-     Bij de keuze voor een Digitale Postzegel kan er gekozen worden voor "Geen standaardgewicht" (MyParcel app kijkt zelf naar de producten) of er wordt wel een standaardgewicht gekozen wanneer er geen gewicht is ingevuld op productniveau. In de MyParcel app kan de klant eventueel zelf nog een gewicht wijzigen voor de order.<br><br>
-  <img src="media/MyParcelNL ~ Apps ~ digitale-postzegel-shopify.png"/><br><br>
-
-
-    <h2 id="2_3">2.3 PostNL afhaallocaties</h2>
-      Jouw klanten gevestigd in Nederland en Belgie hebben met de MyParcel app de mogelijkheid om tijdens hun bestelling te kiezen voor een <span class="nice">PostNL ophaallocatie</span> op basis van hun opgegeven postcode en huisnummer. In de thank-you pagina van Shopify ziet dit er als volgt uit. <br><br>
-
-     <img src="media/MyParcelNL ~ Afhaallocatie.png"/><br><br>
-
-     <b>Belangrijk</b><br>
-      Het is bij Shopify alleen mogelijk om na de betaling de mogelijkheid te bieden voor bezorgopties. MyParcel is daarom genoodzaakt om de bezorgoptie in de thank-you pagina van Shopify te plaatsen.<br><br>
-
-      Naast deze bezorgoptie bieden wij ook de mogelijkheid om na 30 minuten een herinnerinsmail te sturen naar jouw klant wanneer diegene is vergeten om een locatie te kiezen. In deze e-mail zal jouw klant nogmaals de mogelijkheid krijgen om een locatie te kiezen.
-
-       <br><br>  <img src="media/MyParcelNL ~ Apps ~ instellingen 2.png"/><br><br>
-
-      Voor Belgische locaties is het ook mogelijk om een andere taal herinneringsmail in te stellen
-
-      <br><br>  <img src="media/MyParcelNL ~ Apps ~ herinneringsmail-belgie.png"/><br><br>
-
-       <b>Belangrijk</b><br>
-        Maak jij gebruik van een verzendmethode waarin de klant een ophaallocatie kan kiezen? Dan adviseren wij jou om deze functie te activeren. Heeft jouw klant namelijk geen ophaallocatie gekozen, dan is de order ook niet te exporteren naar MyParcel.
-
-    <h2 id="2_4">2.4 Wereldzendingen</h2>
-      Naast Nederlandse en Europese orders is het ook mogelijk om een order vanuit de rest van de wereld via de MyParcel app aan te maken (inclusief douaneformulier). Verstuur jij altijd dezelfde soort producten? Geef een standaard <span class="nice">HS-code</span> op.<br><br>
-      Het is uiteraard ook mogelijk om de <span class="nice">HS-code</span> en het <span class="nice">gewicht</span> per product in te stellen. Zoals hieronder is te zien kan je op productniveau aangeven wat het gewicht is van jouw product en wat de HS-code dient te zien. De MyParcel app zal deze gegevens meenemen in de export.<br><br>
-
-<img src="media/MyParcelNL ~ Wereldzending.png"/>
-
-      <h2 id="2_5">2.5 Filters</h2>
-
-      De filters zijn wat gewijzigd in de MyParcel app. Hierdoor hebben klanten middels "Paid & Unfulfiled"  zicht op welke orders ze nog moeten fulfillen.<br><br>
-
-
-     <li>All: Alle orders worden hier getoond
-     <li>Paid & Unfulfiled: Orders waar nog geen label voor is aangemaakt
-     <li>Printed: Orders die zijn geprint en zijn voorgemeld bij PostNL
-     <li>Partially fulfiled: Wanneer een deel van de order al fulfilled is. Dus één of meerdere producten zijn &nbsp; &nbsp; &nbsp; al fulfilled.
-     <li>Fulfiled: Orders die volledig zijn fulfiled.
-     <li>Unpaid: Orders die nog niet zijn betaald<br><br>
-
-<img src="media/MyParcelNL ~ Apps ~ filters_shopify.png"/>
-
-      <h1 id="3">3 Bestellingen</h1>
-
-    <h2 id="3_1">3.1 Bestellingen & verzendlabels creëren</h2>
-
-      Het is via de MyParcel app mogelijk om op twee manieren bestellingen (in bulk) te exporteren en verzendlabels aan te maken. Dit kan in jouw originele orderoverzicht of op de hoofdpagina van de MyParcel app.<br><br> In het originele orderoverzicht werkt het door jouw orders te selecteren en daarna op de knop <span class="nice">Actions</span> en vervolgens onder Apps op <span class="nice">Print labels</span> te klikken.
-
-      <br><br> <img src="media/MyParcelNL ~ orderoverzicht.png"/>
-<br><br>
-      In het overzicht van de MyParcel app is meer informatie te vinden dan in de originele orderpagina. Wil je namelijk weten welke barcode is gekoppeld aan de order of wil je de order eenmalig aanpasen naar een ander pakkettype of een extra verzendoptie? Dan adviseren wij jou om gebruik te maken van onderstaand overzicht.<br><br>
-
-      Je kan meerdere orders op 1 pagina tonen van de MyParcel app. Het was eerst alleen mogelijk om er 10 te tonen, nu kun je kiezen tussen 10/25/50. De keuze wordt opgeslagen en hoeft niet telkens opnieuw gekozen te worden.
-<br><br> <img src="media/MyParcelNL ~ Order printen.png"/>
-
-      <h2 id="3_2">3.2 Order aanpassen</h2>
-
-      Zoals in de vorige paragraaf is beschreven kan je ook de verzendopties per order aanpassen. Wil je een bepaalde order <span class="nice">verzekerd</span> versturen, <span class="nice">handtekening voor ontvangst</span> toevoegen of zelfs <span class="nice">meerdere labels voor 1 order</span> aanmaken? Dit is mogelijk door op de order te klikken in het bestellingenoverzicht van de MyParcel app.
-
-      <br><br><img src="media/MyParcelNL ~ orderaanpassen.png"/>
-
-      <h2 id="3_3">3.3 Retourlabel aanmaken</h2>
-
-      Mocht jouw klant zijn pakket willen retourneren dan kan jij vanuit de order een retourlabel versturen naar jouw klant. Dit retourlabel wordt verstuurd naar het e-mailadres wat jouw klant in de order heeft opgegeven.
-
-      <br><br><img src="media/MyParcelNL ~ Retour.png"/><br><br>
-
-      Alle instellingen die jij hebt ingesteld in jouw MyParcel omgeving worden voor deze retourfunctionaliteit gebruikt.
-      Er zijn een aantal <span class="nice">voorwaarden</span> waaraan jouw retour dient te voldoen. Er moet namelijk een verzendlabel zijn aangemaakt voor de heenzending en het is beperkt tot een aantal Europese landen. In de </strong><a target="_blank" href="https://backoffice.myparcel.nl/retoursettings">backoffice</a> van MyParcel zijn jouw instellingen en de landen waarvan een retour kan komen.<br>
-
-<h1 id="4">4 Hulp nodig?</h1>
-Indien je vragen hebt over de installatie of het gebruik van de plug-in, helpen wij je graag. Ook tips & suggesties voor verbetering van de (werking) van de plug-in, horen wij graag. Mail </strong><a href="mailto:support@myparcel.nl">support@myparcel.nl</a> of bel: 023 30 30 315.
-  </div>
-
-        <footer class="site-footer">
+<div class="container-fluid">
+    <div class="row">
+        <div class="menu col-xs-4 col-lg-3">
+            <nav class="navbar nav nav-pills nav-stacked">
+                <div class="menu-items">
+                </div>
+            </nav>
+        </div>
+        <section class="page-header col-xs-8 col-xs-offset-4 col-lg-9 col-lg-offset-3">
+            <img height="185" alt="" src="media/logo_myparcel.png">
+            <h1 class="project-name">
+                Handleiding Shopify-plugin
+            </h1>
+            <br />
+        </section>
+        <section class="main-content col-xs-8 col-xs-offset-4 col-lg-7 col-lg-offset-4">
+            <h1>Inleiding</h1>
             <p>
-                <span class="site-footer-owner"><a href="https://www.myparcel.nl">MyParcel</a></span>
+            Met deze Shopify plugin kun je vijf soorten MyParcel zendingen aanmaken
             </p>
-            <p>
-                <span class="site-footer-credits">
-                    <strong>Adres </strong>Siriusdreef 66-68, 2132 WT Hoofddorp
-                    <strong>Telefoon </strong>023 30 30 315&nbsp;
-                    <strong>E-mail</strong><a href="mailto:info@myparcel.nl">&nbsp;info@myparcel.nl</a><br>
-                    <strong>Website </strong><a target="_blank" href="https://www.myparcel.nl">www.myparcel.nl</a>&nbsp;
-                    <strong>IBAN </strong>NL48ABNA0447850539&nbsp;
-                    <strong>KvK </strong>Amsterdam 34 09 97 58 <br>
-                    <strong>BTW-nr. </strong>NL8045.33.258.B01
-                </span>
-            </p>
-        </footer>
-</section>
+            <ul>
+                <li>Pakketten binnen Nederland (huisadres en ophaallocaties PostNL)</li>
+                <li>Pakketten binnen de EU en buiten de EU</li>
+                <li>Brievenbuspakje</li>
+                <li>Digitale Postzegel</li>
+                <li>Ongefrankeerd label</li>  
+            </ul>
+            <div class="box">
+                <p>
+                    Plugins van derden die we ondersteunen
+                </p>
+                <ul>
+                    <li><a href="https://apps.shopify.com/pick-up-points?locale=nl" target="_blank" style="color: #0F5C47;">PostNL Pick-up points</a></li>
+                </ul>
+                <p>
+                    <b><i>Let op: </i></b> Wij leveren geen support op deze plugin!
+                </p>
+            </div>
+            <div>
+            </div>
+            <div style="margin-top:10px">
+                <h1 id="1">1. Installatie</h1>
+                <h2 id="1_1">1.1 Nieuwe installatie</h2>
+                <p>
+                    Om de MyParcel-plugin te installeren, volg je de volgende stappen:
+                </p>
+                <ol>
+                    <li>Ga in jouw Shopify-omgeving naar <span class="nice">Apps</span>.</li>
+                    <li>Klik rechtsboven op <span class="nice">Ga naar de Shopify App Store</span>.</li>
+                    <li>Selecteer de gewenste shop.</li>
+                    <li>Typ 'MyParcel' in de zoekbalk en klik op enter.</li>
+                    <li>Klik op de app 'MyParcel NL' en vervolgens op <span class="nice">Add app</span>.</li>
+                </ol>
+                <h2 id="1_2">1.2 Updaten bestaande installatie</h2>
+                <p>
+                    De app wordt bij wijzigingen automatisch geüpdatet, je hebt hier zelf geen onderhoud aan.
+                </p>
+                <h2 id="1_3">1.3 Testen</h2>
+                <p>
+                    Het is mogelijk om ophalen bij een PostNL-punt als bezorgoptie aan de checkout toe te voegen.
+                    Wij adviseren om, na het installeren en configureren van de plugin, het bestelproces te doorlopen door een test-bestelling te plaatsen en zo te bekijken of de checkout naar wens is. Het is ook mogelijk om zendingen te exporteren na het configureren van de plugin en het downloaden van labels te testen.
+                    Er worden geen kosten in rekening gebracht, zolang je de labels niet inlevert bij PostNL.
+                    <br><i>Let op: digitale postzegels worden wel direct in rekening gebracht.</i>
+                </p>
+                <h1 id="2">2. Configuratie</h1>
+                Ga naar <span class="nice">Apps</span> > <span class="nice">Geïnstalleerde apps</span> > <span class="nice">MyParcel NL</span> om de MyParcel plugin te openen. Klik links bovenin op <span class="nice">Instellingen</span> om de plugin te configureren.
+
+                <h2 id="2_1">2.1 Account</h2>
+                    <h3>API key</h3>
+                <p>
+                    Het belangrijkste van de koppeling is de API key. Deze kan je in jouw <a href="https://backoffice.myparcel.nl" target="_blank" style="color: #FF8C00;">MyParcel backoffice</a> terugvinden. Klik rechts bovenin op het <img height="25px" alt="" src="media/myparcel_account_icoon.png">-teken > <span class="nice">Shop instellingen</span> > Selecteer de gewenste shop > <span class="nice"> Algemeen</span> > <span class="nice">API instellingen</span>. Wanneer je nog geen API key hebt, kan je deze aanmaken door op <span class="nice">Genereer API key</span> te klikken.
+                </p>
+                <img class='center' src='media/SHP_1.png'>
+                <h2 id="2_2">2.2 Algemene instellingen</h2>
+                <img class='center' src="media/instellingen_algemene_instellingen.png">
+                <h3>Standaard paginakeuze</h3>
+                <p>
+                    Hier geef je aan of je het label op een standaard (A4) of op een labelprinter (A6) wilt printen.
+                </p>
+                <h3>Beschrijving op label</h3>
+                <p>
+                    Met deze optie kun je een beschrijving toevoegen aan de zending.
+                    Dit zal worden afgedrukt op de linkerbovenhoek van het label en kun je gebruiken om de zending in het MyParcel zendingenoverzicht op te zoeken.
+                    Gebruik {order_name} om de titel van de order of {order_number} om het ordernummer te vermelden.
+                </p>
+                <img class='center' src="media/algemene_instellingen_beschrijving_op_label.png">
+                <h3>Fulfillment</h3>
+                <p>
+                    Je hebt de mogelijkheid om jouw orders automatisch de status 'Fulfilled' te geven, wanneer PostNL jouw zending heeft gescand. Wil je dit liever handmatig doen? Selecteer dan de optie <span class="nice">Manueel</span>. Ga naar <span class="nice">Bestellingen</span>, selecteer de gewenste orders en klik bovenaan het orderoverzicht op <span class="nice">Bestellingen vervullen</span> om deze status te veranderen.
+                </p>
+                <h2 id="2_3">2.3 Standaard exportinstellingen</h2>
+                <p>
+                    Met de standaardexportinstellingen heb je de mogelijkheid om aan de hand van de door jouw klant gekozen verzendmethode automatisch een gewenst pakkettype zoals een pakket of een brievenbuspakje aan te maken. De door jou aangemaakte verzendmethoden worden hier direct ingeladen, zodat je gelijk aan de slag kunt met het instellen van de exportvoorkeuren. Heb je nog geen verzendmethoden aangemaakt? Bekijk dan de <a href="https://help.shopify.com/nl/manual/shipping/setting-up-and-managing-your-shipping" target="_blank" style="color: #FF8C00;">handleiding van Shopify</a> hoe je dit in kunt stellen.
+                </p>
+                <img class='center' height="300px" src="media/instellingen_standaard_exportinstellingen_popup.gif">
+                <p>
+                    Wanneer je op een verzendmethode klikt, opent een pop-up. In de pop-up kan je aangeven of de zending met MyParcel verzonden mag worden, welk type verzending en pakket er gebruikt moet worden en of er extra opties aan toegevoegd moeten worden.
+                </p>
+                <p>
+                    <b>Nederland</b><br>
+                    <u>Beschikbare verzendtypes:</u> Thuislevering en Afhaalpunt<br>
+                    <u>Beschikbare pakkettypes:</u> Brievenbuspakket, Pakket, Ongefrankeerd label en Digitale postzegel<br>
+                    <u>Beschikbare opties:</u> Handtekening voor ontvangst, Alleen geadresseerde, Retour bij geen gehoor, Extra groot formaat, 18+-check en verzekering tot €5000
+                    <br><br>
+                    <b>België</b><br>
+                    <u>Beschikbare verzendtypes:</u> Thuislevering en Afhaalpunt<br>
+                    <u>Beschikbare pakkettypes:</u> Pakket<br>
+                    <u>Beschikbare opties:</u> Extra groot formaat en standaard verzekering tot €500,-
+                    <br><br>
+                    <b>Europa</b><br>
+                    <u>Beschikbare verzendtypes:</u> Thuislevering<br>
+                    <u>Beschikbare pakkettypes:</u> Pakket<br>
+                    <u>Beschikbare opties:</u> Standaard verzekering tot €500,-
+                    <br><br>
+                    <b>Wereld</b><br>
+                    <u>Beschikbare verzendtypes:</u> Thuislevering<br>
+                    <u>Beschikbare pakkettypes:</u> Pakket<br>
+                    <u>Beschikbare opties:</u> Standaard verzekering tot €200,-
+                </p>
+                    <h2 id="2_4">2.4 Herinneringsmail afhaallocatie</h2>
+                <p>
+                    De MyParcel-plugin heeft niet de mogelijkheid om de afhaallocaties in de checkout zelf te tonen. Jouw klant kan de gewenste locatie selecteren op de bedankpagina na het plaatsen van zijn/haar bestelling. Zet deze functie aan om jouw klant na 30 minuten automatisch een herinneringsmail te sturen wanneer hij/zij is vergeten om een postpunt te selecteren.
+                </p>
+                <img class='center' src="media/instellingen_herinneringsmail_afhaallocatie.png">
+                <h2 id="2_5">2.5 Wereldzendingen</h2>
+                <p>
+                    Om voor een wereldzending een douaneformulier op te stellen, zijn ook de 'HS-code', het 'gewicht per pakket' en 'land van oorsprong' benodigd. Hier kan je de standaard waarden in vullen welke worden gebruikt wanneer je dit niet bij de producten zelf hebt ingevuld.<br><br> 
+                    <b>Let op:</b> wanneer je meer dan één soort product verzendt, is het belangrijk dat je per product een HS-code hebt ingesteld. Als je dit niet doet, is de kans aanwezig dat het pakket niet door de douane komt.
+                </p>
+                <h2 id="2_6">2.6 Veelgestelde vragen over de configuratie</h2>
+                <h3><i>Waar kan ik de 'HS-code' en 'land van oorsprong' op productniveau instellen?</i></h3>
+                <p>
+                    Selecteer het gewenste product op de pagina <span class="nice">Producten</span>. Onderaan de pagina vind je de onderstaande gegevens. Maak je gebruik van 'varianten'? In dat geval vind je het onderstaande nadat je de gewenste variant binnen het product hebt aangeklikt.
+                </p>
+                <img class='center' height='500px' src="media/product_instelling_wereldzending.png">
+                <h1 id="3">3. Gebruik plugin</h1>
+                <h2 id="3_1">3.1 Aanmaken van één verzendlabel</h2>
+                <p>
+                    Bij het openen van een bestelling vind je bovenaan de pagina de knop <img height="25px" alt="" src="media/order_meer_acties.png">. In de dropdown kan je de optie <span class="nice"> Print label</span>. Je wordt doorgestuurd naar de MyParcel app waarna je het label gelijk kunt downloaden. 
+                </p>
+                <h2 id="3_2">3.2 Aanmaken meerdere verzendlabels</h2>
+                <p>
+                    Wanneer je meerdere bestellingen in één keer wilt downloaden, kan je deze in het bestellingenoverzicht aanvinken, op de knop <img height="25px" alt="" src="media/orderoverzicht_acties.png"> bovenaan de pagina klikken. In de dropdown vind je de optie <span class="nice"> Print label</span>. Je wordt doorgestuurd naar de MyParcel app waarna je de labels gelijk kunt downloaden. 
+                </p>
+                <h2 id="3_3">3.3 Aanpassen van een enkele zending</h2>
+                <p>
+                    Wanneer je de bestelling als een ander pakkettype wilt exporteren dan de eerder ingestelde standaard exportinstellingen, kan je dit binnen de MyParcel app doen. Ga naar <span class="nice"> Apps</span> > <span class="nice"> MyParcel NL</span> en open de gewenste order. Hier vind je de mogelijkheid om een export te maken met een aangepast pakketype en eventuele verzendopties toevoegen of verwijderen.
+                </p>
+                <img class='center' height='500px' src="media/myparcel_bestellingen_order_export.png">
+                <h2 id="3_4">3.4 Checkout afhaallocatie</h2>
+                <p>
+                    Wanneer je de optie 'afhaallocatie' aan een verzendmethode hebt gekoppeld (zie hoofdstuk 2.3) hebben jouw klanten de mogelijkheid om op de bedankpagina na de betaling een afhaallocatie te selecteren. Wil je jouw klanten een herinnering sturen wanneer ze vergeten om het postpunt te selecteren? Zet dan de optie 'Herinneringsmail afhaallocatie' uit hoofdstuk 2.4 aan.
+                </p>
+                <img class='center' height='500px' src="media/bedankpagina_afhaallocatie_selecteren.png">
+                <h2 id="3_5">3.5 Retourlabel mailen</h2>
+                <p>
+                    Heeft jouw klant een bestelling geplaatst en wil hij/zij deze retour sturen? Verstuur eenvoudig een mail met het retourlabel door de order te openen en bovenaan de pagina op de knop <img height="25px" alt="" src="media/order_meer_acties.png"> te klikken. Onderaan het dropdownmenu vind je de optie 'send return label' om een mail naar jouw klant te sturen. Wil je instellingen zoals de opmaak van de mail en eigen bijdrage van jouw klant aanpassen? Dit kan in jouw <a href="https://backoffice.myparcel.nl" target="_blank" style="color: #FF8C00;">MyParcel backoffice</a>. Klik rechts bovenin op het <img height="25px" alt="" src="media/myparcel_account_icoon.png">-teken > <span class="nice">Shop instellingen</span> > Selecteer de gewenste shop > <span class="nice"> Retour</span>.
+                </p>
+                <h2 id="3_6"> 3.6 Veel gestelde vragen over de plugin</h2>
+                <h3><i>Waarom kan mijn klant alleen na de checkout voor een afhaallocatie kiezen?</i></h3>
+                <p>
+                    Om de veiligheid van betalingen te waaarborgen, laat Shopify het niet toe dat partijen code aan een checkout toevoegen. Na de checkout is dit wél mogelijk waardoor we de optie toch aan de plugin toe hebben kunnen voegen. Samen met de herinneringsmail (zie hoofdstuk 2.4) kan je jouw klanten deze optie op de best mogelijke manier toevoegen. 
+                </p>
+                <h3><i>Ik heb de plugin geïnstalleerd maar wanneer ik een zending probeer te exporteren, krijg ik een error.</i></h3>
+                <p>
+                    Mogelijk zijn de actieve verzendmethoden bij het configureren van de plugin nog niet aan pakkettypes gekoppeld. Volg de stappen in hoofdstuk 2.3 om dit in te stellen.
+                </p>
+                <footer class="site-footer">
+                    <p>
+                        <span class="site-footer-owner">MyParcel</span>
+
+                        <span class="site-footer-credits">
+                            <strong>Adres </strong>Antareslaan 31, 2132 JE Hoofddorp<br />
+                            <strong>Telefoon </strong>023 30 30 315&nbsp;
+                            <strong>E-mail</strong> &nbsp;info@myparcel.nl<br />
+                            <strong>Website </strong><a href="https://www.myparcel.nl">www.myparcel.nl</a>&nbsp;
+                            <strong>IBAN </strong>NL48ABNA0447850539&nbsp;
+                            <strong>KvK </strong>Amsterdam 34 09 97 58 <br />
+                            <strong>BTW-nr. </strong>NL8045.33.258.B01
+                        </span>
+                        <br />
+                        &nbsp;
+                    </p>
+                </footer>
+            </div>
+        </section>
+    </div>
+</div>
+<script>
+    // Set postman button attributes in one place
+    postman_buttons = document.getElementsByClassName('postman-run-button');
+
+    for (i = 0; i < postman_buttons.length; i++) {
+        postman_buttons[i].setAttribute('data-postman-action', 'collection/import');
+        postman_buttons[i].setAttribute('data-postman-var-1', '065786285c2e5ed75509');
+        postman_buttons[i].setAttribute('data-postman-param', 'env%5BMyParcel%20public%5D=W3siZW5hYmxlZCI6dHJ1ZSwia2V5IjoiYXBpX2tleSIsInZhbHVlIjoiIn0seyJrZXkiOiJVc2VyLUFnZW50IiwidmFsdWUiOiJ7e1VzZXItQWdlbnR9fSIsImRlc2NyaXB0aW9uIjoiIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJhdXRoX3Rva2VuIiwidmFsdWUiOiIiLCJkZXNjcmlwdGlvbiI6IiIsImVuYWJsZWQiOnRydWV9XQ==');
+    }
+
+    (function (p,o,s,t,m,a,n) {
+        !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+        !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+            (n = o.createElement("script")),
+                (n.id = s+t), (n.async = 1), (n.src = m), n
+        ));
+    }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+</script>
+
 </body>
 </html>
