@@ -1,0 +1,241 @@
+﻿<script src="js/auto_menu.js"></script>
+<div class="container-fluid">
+    <div class="row">
+        <div class="menu col-xs-4 col-lg-3">
+            <nav class="navbar nav nav-pills nav-stacked">
+                <div class="menu-items">
+                </div>
+            </nav>
+        </div>
+        <section class="page-header col-xs-8 col-xs-offset-4 col-lg-9 col-lg-offset-3">
+            <img height="185" alt="" src="media/logo_myparcel.png">
+            <h1 class="project-name">
+                Manual Shopify-plugin
+            </h1>
+            <br />
+        </section>
+        <section class="main-content col-xs-8 col-xs-offset-4 col-lg-7 col-lg-offset-4">
+            <h1>Introduction</h1>
+            <p>
+                Using this Shopify plug-in, you can create five types of MyParcel shipments
+            </p>
+            <span class="nice"></span>
+            <ul>
+                <li>Parcels within the Netherlands (home address and PostNL collection locations)</li>
+                <li>Parcels within the EU and outside of the EU</li>
+                <li>Letterbox parcel</li>
+                <li>Digital stamp</li>
+                <li>Unfranked label</li>
+            </ul>
+            <div class="box">
+                <p>
+                    Plugins van derden die we ondersteunen
+                </p>
+                <ul>
+                    <li><a href="https://apps.shopify.com/pick-up-points?locale=nl" target="_blank" style="color: #0F5C47;">PostNL Pick-up points</a></li>
+                </ul>
+                <p>
+                    <b><i>Let op: </i></b> Wij leveren geen support op deze plugin!
+                </p>
+            </div>
+            <div>
+            </div>
+            <div style="margin-top:10px">
+                <h1 id="1">1. Installation</h1>
+                <h2 id="1_1">1.1 New installation</h2>
+                <p> 
+                    Take the following steps to install the MyParcel plug-in:
+                </p>
+                <ol>
+                    <li>Go to <span class="nice">Apps</span> in your Shopify environment.</li>
+                    <li>Click <span class="nice">Go to the Shopify Store</span> in the top right-hand corner.</li>
+                    <li>Select the correct shop.</li>
+                    <li>Type <span class="nice">MyParcel</span> into the search bar and click <span class="nice">Enter</span>.</li>
+                    <li>Click the <span class="nice">MyParcel NL</span> app and then <span class="nice">Add app</span>.</li>
+                </ol>
+                <h2 id="1_2">1.2 Updating an existing installation</h2>
+                <p>
+                    The app is updated automatically when changes are made. You do not need to update it yourself.
+                </p>
+                <h2 id="1_3">1.3 Testing</h2>
+                <p>
+                    You can add <span class="nice">Collect from a PostNL location</span> as a delivery option at the checkout. 
+                    Once you have installed and configured the plug-in, we recommend that you go through the order process and place a test order. 
+                    This allows you to check that the checkout has the correct settings. 
+                    You can also export shipments once the plug-in has been configured and test label downloads. 
+                    Testing is free of charge, as long as you don't offer the labels to PostNL.
+                    <br><i>NB: you will be charged for digital stamps straight away.</i>
+                </p>
+                <h1 id="2">2. Configuration</h1>
+                <p>
+                    Go to <span class="nice">Apps</span> > <span class="nice">Installed apps</span> > <span class="nice">MyParcel NL</span> to open the MyParcel plug-in.
+                    Click <span class="nice">Settings</span> in the top left-hand corner to configure the plug-in.
+                </p>
+                <h2 id="2_1">2.1 Account</h2>
+                    <h3>API key</h3>
+                <p>
+                    The API key is the most important aspect of the link. 
+                    You can find it in your <a href="https://backoffice.myparcel.nl/">MyParcel backoffice</a>. 
+                    In the top right-hand corner, click the symbol <span class="nice">Shop settings</span> >
+                    Select the correct shop > <span class="nice">General</span> > <span class="nice">API settings</span>. 
+                <img class='center' src='media/SHP_1.png'>
+                <h2 id="2_2">2.2 General settings</h2>
+                <img class='center' src="media/instellingen_algemene_instellingen.png">
+                <h3>Standard page selection</h3>                
+                <p>
+                    Here, you can specify whether you want to print the label on a standard A4 printer or on a label printer (A6).
+                </p>
+                <h3>Description on label</h3>
+                <p>
+                    This options allows you to add a description to the shipment. 
+                    The description will be printed in the top left-hand corner of the label. 
+                    You can use it to search for the shipment in the MyParcel shipments summary. 
+                    Use {order_name} to specify the order title or {order_number} to specify the order the number.
+                </p>
+                <img class='center' src="media/algemene_instellingen_beschrijving_op_label.png">
+                <h3>Fulfilment</h3>
+                <p>
+                    You can give your orders <span class="nice">Fulfilled</span> status automatically once PostNL scans your shipment. 
+                    If you would prefer to do this manually, select the <span class="nice">Manual</span> option. 
+                    Go to <span class="nice">Orders</span>, select the relevant orders and click <span class="nice">Fulfil orders</span> above the order summary to change this status.
+                </p>
+                <h2 id="2_3">2.3 Standard export settings</h2>
+                <p>
+                    Using the standard export settings, you can automatically create a parcel type, such as a parcel or a letterbox parcel, based on the shipping method selected by your customer. 
+                    The shipping methods you have created will appear here so you can start setting your export preferences straight away. 
+                    If you have not yet created any shipping methods, find out how to do this in the <a href="https://help.shopify.com/nl/manual/shipping/setting-up-and-managing-your-shipping">Shopify manual</a>.
+                </p>
+                <img class='center' height="300px" src="media/instellingen_standaard_exportinstellingen_popup.gif">
+                <p>
+                    When you click a shipping method, a pop-up will appear. 
+                    In the pop-up, you can specify whether the shipment can be sent through MyParcel, the shipment and parcel type that need to be used and whether extra options need to be added.
+                </p>
+                <p>
+                    <b>Nederland</b><br>
+                    <u>Available shipment types:</u> Home delivery and pick-up location<br>
+                    <u>Available parcel types:</u> Letterbox parcel, parcel, unfranked label and digital stamp<br>
+                    <u>Available options: </u> Signature upon receipt, deliver to recipient only, no-answer return, XL size, 18+ age check and insurance up to €5,000
+                    <br><br>
+                    <b>België</b><br>
+                    <u>Available shipment types:</u> Home delivery and pick-up location<br>
+                    <u>Available parcel types:</u> Parcel<br>
+                    <u>Available options:</u> XL size and standard insurance up to €500
+                    <br><br>
+                    <b>Europe</b><br>
+                    <u>Available shipment types:</u> Home delivery<br>
+                    <u>Available parcel types:</u> Parcel<br>
+                    <u>Available options:</u> Standard insurance up to €500
+                    <br><br>
+                    <b>Rest of world</b><br>
+                    <u>Available shipment types:</u> Home delivery<br>
+                    <u>Available parcel types:</u> Parcel<br>
+                    <u>Available options:</u> Standard insurance up to €200
+                </p>
+                    <h2 id="2_4">2.4 Herinneringsmail afhaallocatie</h2>
+                <p>
+                    The MyParcel plug-in does not display the pick-up locations at the checkout. 
+                    Your customer can select the preferred location on the thank-you page once they have placed their order. 
+                    Switch on the option to send your customer a reminder email automatically after 30 minutes if they have forgotten to select a pick-up location.
+                </p>
+                <img class='center' src="media/instellingen_herinneringsmail_afhaallocatie.png">
+                <h2 id="2_5">2.5 World shipments</h2>
+                <p>
+                    The HS code, weight per parcel and country of origin are required fields on customs forms for world shipments. Here, you can enter the standard values, which will be used if you have not entered values for the individual products.<br><br> 
+                    <b>NB:</b> if you are sending more than one product, you need to enter a separate HS code for each product. If you do not do this, the parcel might not be cleared by the customs authorities.
+                </p>
+                <h2 id="2_6">2.6  Frequently Asked Questions about the configuration</h2>
+                <h3><i>Where can I enter the HS code and county of origin for a specific product?</i></h3>
+                <p>
+                    Go to the <span class="nice">Products</span> page and select the product.
+                    You will find the form below at the bottom of the page. 
+                    If you use ‘variants’, the form below will appear once you have clicked the relevant variant within the product type.
+                </p>
+                <img class='center' height='500px' src="media/product_instelling_wereldzending.png">
+                <h1 id="3">3. Use of plugin</h1>
+                <h2 id="3_1">3.1 Creating one shipping label</h2>
+                <p>
+                    When opening an order, you will see the <span class="nice">More actions</span> button at the top of the page. 
+                    In the dropdown menu, select the <span class="nice">Print label</span> option. 
+                    You will be forwarded to the MyParcel app, where you can download the label straight away.
+                </p>
+                <h2 id="3_2">3.2 Aanmaken meerdere verzendlabels</h2>
+                <p>
+                    If you want to download multiple orders at the same time, you can select them in the order summary. 
+                    Then click the <span class="nice">More actions</span> button at the top of the page. 
+                    In the dropdown menu, select the <span class="nice">Print label</span> option. 
+                    You will be forwarded to the MyParcel app, where you can download the labels straight away.
+                </p>
+                <h2 id="3_3">3.3 Making changes to one shipment</h2>
+                <p>
+                    If you want to export an order as a different parcel type than specified in the standard export settings, you can do this in the MyParcel app. 
+                    Go to <span class="nice">Apps</span> > <span class="nice">MyParcel NL</span> and open the order. 
+                    Here, you can create an export with an adjusted parcel type and add or delete any shipping options.
+                </p>
+                <img class='center' height='500px' src="media/myparcel_bestellingen_order_export.png">
+                <h2 id="3_4">3.4 Pick-up location checkout</h2>
+                <p>
+                    If you have linked the ‘pick-up location’ option to a shipping method (see chapter 2.3), your customers will be able to select a pick-up location on the thank-you page that appears after they have paid. 
+                    To send your customers a reminder if they’ve forgotten to select a pick-up location, switch on the ‘Pick-up location reminder email’ (see chapter 2.4).
+                </p>
+                <img class='center' height='500px' src="media/bedankpagina_afhaallocatie_selecteren.png">
+                <h2 id="3_5">3.5 Emailing a return label</h2>
+                <p>
+                    If your customer wants to return an order, you need to send them the return label by email. 
+                    To do this, simply open the order and click the ‘More actions’ button at the top of the page. 
+                    The ‘Send return label’ option will appear at the bottom of the dropdown menu. 
+                    Select this option to send an email to your customer. 
+                    If you want to change settings involving the email layout or excess to be paid by your customer, you can do this in your
+                    <a href="https://backoffice.myparcel.nl/">MyParcel backoffice</a>. 
+                    In the top right-hand corner, click the <img height='25px' src='media/myparcel_account_icoon.png'> symbol <span class="nice">Shop settings</span> > <span class="nice">Select the correct shop</span> > <span class="nice">Return</span>.
+                </p>
+                <h2 id="3_6"> 3.6 FAQs about the plug-in</h2>
+                <h3><i>Why can my customer only select a pick-up location once they have paid?</i></h3>
+                <p>
+                    In order to guarantee the security of payments, Shopify does not allow parties to add code to a checkout. 
+                    However, we were still able to add this option to the plug-in after the checkout section. 
+                    Sending your customers a reminder email is the most effective way to let your customers select a pick-up location (see chapter 2.4).
+                </p>
+                <h3><i>I have installed the plug-in but I receive an error when I try to export a shipment.</i></h3>
+                <p>
+                    When configuring the plug-in, you might not have linked the active shipping methods to parcel types. Follow the steps in chapter 2.3 to set this up.
+
+                </p>
+                <footer class="site-footer">
+                    <p>
+                        <span class="site-footer-owner">MyParcel</span>
+
+                        <span class="site-footer-credits">
+                            <strong>Address </strong>Antareslaan 31, 2132 JE Hoofddorp<br />
+                            <strong>Telephone </strong>023 30 30 315&nbsp;
+                            <strong>E-mail address</strong> &nbsp;info@myparcel.nl<br />
+                            <strong>Website </strong><a href="https://www.myparcel.nl">www.myparcel.nl</a>&nbsp;
+                            <strong>IBAN </strong>NL48ABNA0447850539&nbsp;
+                            <strong>KvK </strong>Amsterdam 34 09 97 58 <br />
+                            <strong>VAT no. </strong>NL8045.33.258.B01
+                        </span>
+                        <br />
+                        &nbsp;
+                    </p>
+                </footer>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- <script>
+    // Set postman button attributes in one place
+    postman_buttons = document.getElementsByClassName('postman-run-button');
+
+    for (i = 0; i < postman_buttons.length; i++) {
+        postman_buttons[i].setAttribute('data-postman-action', 'collection/import');
+        postman_buttons[i].setAttribute('data-postman-var-1', '065786285c2e5ed75509');
+        postman_buttons[i].setAttribute('data-postman-param', 'env%5BMyParcel%20public%5D=W3siZW5hYmxlZCI6dHJ1ZSwia2V5IjoiYXBpX2tleSIsInZhbHVlIjoiIn0seyJrZXkiOiJVc2VyLUFnZW50IiwidmFsdWUiOiJ7e1VzZXItQWdlbnR9fSIsImRlc2NyaXB0aW9uIjoiIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJhdXRoX3Rva2VuIiwidmFsdWUiOiIiLCJkZXNjcmlwdGlvbiI6IiIsImVuYWJsZWQiOnRydWV9XQ==');
+    }
+
+    (function (p,o,s,t,m,a,n) {
+        !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+        !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+            (n = o.createElement("script")),
+                (n.id = s+t), (n.async = 1), (n.src = m), n
+        ));
+    }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));
+</script> -->
